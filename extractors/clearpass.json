@@ -1,0 +1,272 @@
+{
+  "extractors": [
+    {
+      "title": "cppm_software",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "software",
+      "extractor_config": {
+        "regex_value": "software=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_ip",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "ip",
+      "extractor_config": {
+        "regex_value": "ip=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_Auth.Username",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "AuthUsername",
+      "extractor_config": {
+        "regex_value": "Username=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_eventId",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "eventId",
+      "extractor_config": {
+        "regex_value": "eventId=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_Common.Host-MAC-Address",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "CommonHostMACAddress",
+      "extractor_config": {
+        "regex_value": "Common.Host\\-MAC\\-Address=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_Common.Service",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "CommonService",
+      "extractor_config": {
+        "regex_value": "Common.Service=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_Common.NAS-IP-Address",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "CommonNASIPAddress",
+      "extractor_config": {
+        "regex_value": "Common.NAS\\-IP\\-Address=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_Common.Enforcement-Profiles",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "CommonEnforcementProfiles",
+      "extractor_config": {
+        "regex_value": "Common.Enforcement\\-Profiles=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_Common.Username",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "CommonUsername",
+      "extractor_config": {
+        "regex_value": "Common.Username=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_Common.Alerts",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "CommonAlerts",
+      "extractor_config": {
+        "regex_value": "Common.Alerts=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_Common.Error-Code",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "CommonErrorCode",
+      "extractor_config": {
+        "regex_value": "Common.Error\\-Code=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_RADIUS.Auth-Method",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "RADIUSAuthMethod",
+      "extractor_config": {
+        "regex_value": "RADIUS.Auth\\-Method=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+
+    {
+      "title": "cppm_Auth.Enforcement-Profiles",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "AuthEnforcementProfiles",
+      "extractor_config": {
+        "regex_value": "Auth.Enforcement\\-Profiles=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_Auth.Protocol",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "AuthProtocol",
+      "extractor_config": {
+        "regex_value": "Auth.Protocol=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_Auth.Source",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "AuthSource",
+      "extractor_config": {
+        "regex_value": "Auth.Source=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_Auth.Roles",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "AuthRoles",
+      "extractor_config": {
+        "regex_value": "Auth.Roles=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_Auth.NAS-IP-Address",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "AuthNASIPAddress",
+      "extractor_config": {
+        "regex_value": "Auth.NAS\\-IP\\-Address=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_Auth.Service",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "AuthService",
+      "extractor_config": {
+        "regex_value": "Auth.Service=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    },
+    {
+      "title": "cppm_Auth.Login-Status",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "AuthLoginStatus",
+      "extractor_config": {
+        "regex_value": "Auth.Login\\-Status=\"([^\"]+)\""
+      },
+      "condition_type": "regex",
+      "condition_value": "^cppm"
+    }
+  ],
+  "version": "6.0.4"
+}
